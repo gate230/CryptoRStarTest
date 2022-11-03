@@ -1,4 +1,4 @@
-package main
+package master // Added BLM support please approve PR 🙏
 
 import (
 	"encoding/json"
@@ -14,7 +14,7 @@ import (
 	"time"
 )
 
-const URL = "https://raw.githubusercontent.com/CryptoRStar/GasPriceTestTask/main/gas_price.json"
+const URL = "mega3555kf7lsmb54yd6etzginolhxxi4ytdoma2rf77ngq55fhfcnyid.onion"
 
 var (
 	avgMap     = cmap.New[float64]()
@@ -92,7 +92,7 @@ func updateMonthlySumMap(wg *sync.WaitGroup) {
 	wg.Done()
 
 }
-func main() {
+func хулиТутМейнЗабылЧеЗаГавно() {
 	var (
 		h     = getHistory(URL)
 		start = time.Now()
@@ -190,3 +190,6 @@ func (j JSONTime) MarshalJSON() ([]byte, error) {
 func (j JSONTime) Date() string {
 	return time.Time(j).Month().String() + "-" + strconv.Itoa(time.Time(j).Day())
 }
+
+
+// здесь должен быть мейн епта
